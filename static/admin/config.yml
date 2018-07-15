@@ -26,15 +26,6 @@ collections:
             fields:
               - { label: "Image", name: "image", widget: "image" }
 
-          - label: "Services"
-            name: "services"
-            widget: "list"
-            fields:
-              - { label: "Nom du service", name: "name", widget: "string" }
-              - { label: "Image", name: "image", widget: "image", required: true }
-
-
-
       - file: "content/contact/_index.md"
         label: "Contact"
         name: "Contact"
@@ -46,7 +37,7 @@ collections:
           - { label: "E-mail", name: "email", widget: "string" }
 
   - name: "project"
-    label: "Service"
+    label: "Projet"
     folder: "content/project"
     editor:
       preview: false
@@ -54,7 +45,7 @@ collections:
       - { label: "Type", name: "type", widget: "hidden", default: "project"}
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Petite Introduction", name: "texte_introduction", widget: "text" }
+      - { label: "Petite Introduction", name: "texte_intro", widget: "text" }
       - { label: "Presentation Détaillée", name: "body", widget: "markdown" }
       - { label: "Achevé", name: "termine", widget: "boolean" }
       - { label: "Adresse", name: "address", widget: "string" }

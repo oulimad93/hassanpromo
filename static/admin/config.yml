@@ -22,7 +22,7 @@ collections:
             name: "slides"
             widget: "list"
             fields:
-              - { label: "Image (taille minimum: 1920x700 pour un bon résultat)", name: "image", widget: "image" }
+              - { label: "Image (Taille minimum recommendée: 1920x700)", name: "image", widget: "image" }
           - { label: "Présentation", name: "body", widget: "markdown" }
           - { label: "Emplacement GPS du Siège Social", name: "localisation", widget: "string" }
 
@@ -35,6 +35,8 @@ collections:
           - { label: "Téléphone", name: "phone", widget: "string", required: true }
           - { label: "Adresse du Siége Social", name: "address", widget: "string" }
           - { label: "E-mail", name: "email", widget: "string" }
+          - { label: "Lien page Facebook", name: "facebook", widget: "string" }
+          - { label: "Lien Page Youtube", name: "youtube", widget: "string" }
 
   - name: "project"
     label: "Projet"
@@ -44,7 +46,7 @@ collections:
     fields:
       - { label: "Type", name: "type", widget: "hidden", default: "project"}
       - { label: "Titre", name: "title", widget: "string" }
-      - { label: "Image Principale (taille minimum: 1000x500 pour un bon résultat)", name: "image", widget: "image" }
+      - { label: "Image Principale (Taille minimum recommendée: 1000x500)", name: "image", widget: "image" }
       - { label: "Petite présentation pour la page d'accueil", name: "texte_intro", widget: "text" }
       - { label: "Présentation Détaillée", name: "body", widget: "markdown" }
       - { label: "Achevé", name: "termine", widget: "boolean" }
@@ -60,11 +62,11 @@ collections:
         name: "plans"
         widget: "list"
         fields:
-          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Image (Taille minimum recommendée: 1280x720)", name: "image", widget: "image" }
           - { label: "Titre", name: "title", widget: "string" }
       - label: "Avancements"
         name: "avancement"
         widget: "list"
         fields:
-          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Image (Taille minimum recommendée: 1280x720)", name: "image", widget: "image" }
 

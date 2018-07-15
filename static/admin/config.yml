@@ -21,17 +21,17 @@ collections:
           - { label: "Presentation", name: "body", widget: "markdown" }
           - { label: "Emplacement GPS", name: "localisation", widget: "string" }
           - label: "Slides"
-            name: slides
-            widget: list
+            name: "slides"
+            widget: "list"
             fields:
-              - { label: "Image", name: image, widget: image }
+              - { label: "Image", name: "image", widget: "image" }
 
-          - label: Services
-            name: services
-            widget: list
+          - label: "Services"
+            name: "services"
+            widget: "list"
             fields:
-              - { label: Nom du service, name: name, widget: string }
-              - { label: Image, name: image, widget: image, required: true }
+              - { label: "Nom du service", name: "name", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: true }
 
 
 
@@ -48,6 +48,8 @@ collections:
   - name: "project"
     label: "Service"
     folder: "content/project"
+    editor:
+      preview: false
     fields:
       - { label: "Type", name: "type", widget: "hidden", default: "project"}
       - { label: "Title", name: "title", widget: "string" }
@@ -58,20 +60,20 @@ collections:
       - { label: "Adresse", name: "address", widget: "string" }
       - { label: "Emplacement GPS", name: "localisation", widget: "string" }
       - { label: "Introduction appartements", name: "intro_appartements", widget: "text" }
-      - label: Caracteristiques
-        name: specs
-        widget: list
+      - label: "Caracteristiques"
+        name: "specs"
+        widget: "list"
         fields:
-          - { label: "Caracteristique", name: spec, widget: string }
-      - label: Plans
-        name: plans
-        widget: list
+          - { label: "Caracteristique", name: "spec", widget: "string" }
+      - label: "Plans"
+        name: "plans"
+        widget: "list"
         fields:
-          - { label: "Image", name: image, widget: image }
-          - { label: "Titre", name: title, widget: string }
-      - label: Avancements
-        name: avancement
-        widget: list
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Titre", name: "title", widget: "string" }
+      - label: "Avancements"
+        name: "avancement"
+        widget: "list"
         fields:
-          - { label: "Image", name: image, widget: image }
+          - { label: "Image", name: "image", widget: "image" }
 

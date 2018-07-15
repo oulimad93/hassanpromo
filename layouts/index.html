@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+
+            {{ partial "slide" . }}
+            <div id="contentWrapper">
+            {{ partial "presentation" . }}
+            {{ partial "projets-en-cours" . }}
+            {{ partial "projets-realises" . }}
+            {{ partial "contact" . }}
+            {{ partial "map" . }}
+            {{ partial "footer" . }}
+
+            </div>
+
+            <!-- Back to top Link -->
+
+{{ end }}

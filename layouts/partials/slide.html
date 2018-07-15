@@ -1,0 +1,25 @@
+<div id="slider_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classicslider1">
+                <!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
+                <div id="slider" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
+                    <ul>
+                        <!-- SLIDE  -->
+                    {{ with .Site.GetPage "section" "" }}
+                    {{ $bundle := .Site.GetPage "section" "media" }}
+                    {{ range .Params.slides }}
+                        {{ $fileName := strings.TrimPrefix "/media/" .image }}
+                        {{ $img := index ($bundle.Resources.Match $fileName) 0 }}
+                        {{ $resizedImg := $img.Fill "1920x600 center q100" }}
+                        <li data-index="rs-20" data-transition="zoomin" class="dark" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0"  data-saveperformance="off" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="{{ $img.RelPermalink }}"  alt="" data-bgposition="center top" data-kenburns="on" data-duration="15000" data-ease="Linear.easeNone" data-scalestart="120" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 1000" data-offsetend="0 -500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+                        </li>
+
+                    {{ end }}
+                    {{ end }}
+
+                    </ul>
+                    <div class="tp-static-layers"></div>
+                    <div class="tp-bannertimer" style="height: 7px; background-color: rgba(255, 255, 255, 0);"></div>
+                </div>
+            </div>

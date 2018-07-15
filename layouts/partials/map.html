@@ -1,0 +1,20 @@
+<div class="gmap">
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA__J90bU4DpuIEZZTQlX2PgdOJF_Ze9Zs" type="text/javascript"></script>
+    <div id="map_canvas" style="height: 400px; width: 100%;">
+        <script type="text/javascript">
+            function init_map(){
+                var localisation = {{ .Params.localisation }}.split(",") ;
+                var infowindow = new google.maps.InfoWindow();
+                var iconBase = '/images/icons/';
+                var myOptions = {zoom:15,disableDefaultUI: false,center:new google.maps.LatLng(localisation[0],localisation[1]),mapTypeId: google.maps.MapTypeId.ROADMAP, scrollwheel:  false};
+                map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+                marker = new google.maps.Marker({map: map,icon: iconBase + 'marker.png',animation: google.maps.Animation.DROP,position: new google.maps.LatLng(localisation[0],localisation[1])});
+                google.maps.event.addListener(marker, "click", function(){
+                    infowindow.open(map,marker);
+                });
+            }
+            google.maps.event.addDomListener(window, 'load', init_map);
+        </script>
+    </div>
+</div>
+

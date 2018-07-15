@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Hassan Promo | Promotion immobilière</title>
+<meta name="description" content="Hassan Promo | Née en 2009 Hassan Promo active dans le domaine de la promotion immobilière et de la construction">
+<meta name="author" content="linkomweb.com">
+<!-- Mobile Meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- Put favicon.ico and apple-touch-icon(s).png in the images folder -->
+    <link rel="shortcut icon" href="/images/favicon.png">
+<!-- CSS StyleSheets -->
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=Karla:400,700italic,700,400italic" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/css/assets.css">
+<link rel="stylesheet" href="/css/style.css">
+<link id="theme_css" rel="stylesheet" href="/css/light.css">
+
+<!-- REVOLUTION SLIDER STYLES -->
+<link rel="stylesheet" href="/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" type="text/css">
+<link rel="stylesheet" href="/revolution/css/settings.css" type="text/css">
+<link rel="stylesheet" href="/revolution/css/layers.css" type="text/css">
+<link rel="stylesheet" href="/revolution/css/navigation.css" type="text/css">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5.js"></script>
+    <![endif]-->
+    <!-- Skin CSS file -->
+    <link id="skin_css" rel="stylesheet" href="/css/skins/default.css">
+    <link rel="stylesheet" href="/default.css">
+    <link rel="stylesheet" href="/custom.css">
+</head>
+<body>
+  <div class="pageWrapper animsition">
+    {{ partial "navbar" . }}
+
+    {{ block "main" . }}{{ end }}
+  </div>
+<a id="to-top"><span class="fa fa-chevron-up shape main-bg"></span></a>
+<!-- Load JS plugins file -->
+<script type="text/javascript" src="/js/assets.min.js"></script>
+<!-- SLIDER REVOLUTION  -->
+<script type="text/javascript" src="/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS
+(Load Extensions only on Local File Systems !  +
+The following part can be removed on Server for On Demand Loading) -->
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="/revolution/js/extensions/revolution.extension.video.min.js"></script>
+                <!-- END SLIDER REVOLUTION 5.0 EXTENSIONS -->
+                <script type="text/javascript">
+                    var tpj=jQuery;
+                    var revapi4;
+                    tpj(window).load(function() {
+                        if(tpj("#slider").revolution == undefined){
+                            revslider_showDoubleJqueryError("#slider");
+                        }else{
+                            revapi4 = tpj("#slider").show().revolution({
+                                sliderType:"standard",
+                                jsFileLocation:"revolution/js/",
+                                sliderLayout:"fullwidth",
+                                dottedOverlay:"none",
+                                delay:7000,
+                                navigation: {
+                                    keyboardNavigation:"off",
+                                    keyboard_direction: "horizontal",
+                                    mouseScrollNavigation:"off",
+                                    onHoverStop:"off",
+                                    touch:{
+                                        touchenabled:"on",
+                                        swipe_threshold: 75,
+                                        swipe_min_touches: 1,
+                                        swipe_direction: "horizontal",
+                                        drag_block_vertical: false
+                                    }
+                                    ,
+                                    arrows: {
+                                        style:"zeus",
+                                        enable:true,
+                                        hide_onmobile:true,
+                                        hide_under:600,
+                                        hide_onleave:true,
+                                        hide_delay:200,
+                                        hide_delay_mobile:1200,
+                                        tmp:'<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
+                                        left: {
+                                            h_align:"left",
+                                            v_align:"center",
+                                            h_offset:30,
+                                            v_offset:0
+                                        },
+                                        right: {
+                                            h_align:"right",
+                                            v_align:"center",
+                                            h_offset:30,
+                                            v_offset:0
+                                        }
+                                    }
+                                },
+                                viewPort: {
+                                    enable:true,
+                                    outof:"pause",
+                                    visible_area:"80%"
+                                },
+                                responsiveLevels:[1170,1024,778,480],
+                                gridwidth:[1170,1024,778,480],
+                                gridheight:[550,550,450,400],
+                                lazyType:"none",
+                                parallax: {
+                                    type:"mouse",
+                                    origo:"slidercenter",
+                                    speed:2000,
+                                    levels:[2,3,4,5,6,7,12,16,10,50],
+                                },
+                                shadow:0,
+                                spinner:"off",
+                                stopLoop:"off",
+                                stopAfterLoops:-1,
+                                stopAtSlide:-1,
+                                hideTimerBar:'on',
+                                shuffle:"off",
+                                autoHeight:"off",
+                                hideThumbsOnMobile:"off",
+                                hideSliderAtLimit:0,
+                                hideCaptionAtLimit:0,
+                                hideAllCaptionAtLilmit:0,
+                                debugMode:false,
+                                fallbacks: {
+                                    simplifyAll:"off",
+                                    nextSlideOnWindowFocus:"off",
+                                    disableFocusListener:false,
+                                }
+                            });
+                            revapi4.bind("revolution.slide.onchange",function (e,data) {
+                                if($('.top-head').hasClass('transparent') || $('.top-head').hasClass('boxed-transparent')){
+                                    if($('#slider_wrapper ul > li').eq(data.slideIndex-1).hasClass('dark') ){
+                                        $('.top-head').removeClass('not-dark');
+                                        $('.top-head').addClass('dark');
+                                        var logo = $('.logo').find('img').attr('src').replace("logo.png", "logo-light.png");
+                                        $('.logo').find('img').attr('src',logo);
+                                    } else {
+                                        $('.top-head').removeClass('dark');
+                                        $('.top-head').addClass('not-dark');
+                                        var logo = $('.logo').find('img').attr('src').replace("logo-light.png", "logo.png");
+                                        $('.logo').find('img').attr('src',logo);
+                                    }
+                                    if($('.top-head').hasClass('sticky-nav')){
+                                        var logo = $('.logo').find('img').attr('src').replace("logo-light.png", "logo.png");
+                                        $('.logo').find('img').attr('src',logo);
+                                    }
+                                }
+                            });
+                        }
+                    }); /*ready*/
+                </script>
+                <!-- general script file -->
+                <script type="text/javascript" src="/js/script.js"></script>
+                <script type="text/javascript" src="/js/jquery.sticky.js"></script>
+                <script>
+                    $(document).ready(function(){
+                        $("#navigation").sticky({topSpacing:0});
+                    });
+                </script>
+        <script type="text/javascript">
+    // poster frame click event
+    $(document).on('click','.js-videoPoster',function(ev) {
+        ev.preventDefault();
+        var $poster = $(this);
+        var $wrapper = $poster.closest('.js-videoWrapper');
+        videoPlay($wrapper);
+    });
+    // play the targeted video (and hide the poster frame)
+    function videoPlay($wrapper) {
+        var $iframe = $wrapper.find('.js-videoIframe');
+        var src = $iframe.data('src');
+    // hide poster
+    $wrapper.addClass('videoWrapperActive');
+    // add iframe src in, starting the video
+    $iframe.attr('src',src);
+}
+    // stop the targeted/all videos (and re-instate the poster frames)
+    function videoStop($wrapper) {
+    // if we're stopping all videos on page
+    if (!$wrapper) {
+        var $wrapper = $('.js-videoWrapper');
+        var $iframe = $('.js-videoIframe');
+    // if we're stopping a particular video
+} else {
+    var $iframe = $wrapper.find('.js-videoIframe');
+}
+    // reveal poster
+    $wrapper.removeClass('videoWrapperActive');
+    // remove youtube link, stopping the video from playing in the background
+    $iframe.attr('src','');
+}
+</script>
+
+<script type="text/javascript">
+    jQuery(function() {
+        jQuery('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = jQuery(this.hash);
+                target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    jQuery('html,body').animate({
+                        scrollTop: target.offset().top -73
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>

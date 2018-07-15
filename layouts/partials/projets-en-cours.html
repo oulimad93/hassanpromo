@@ -1,0 +1,67 @@
+<div class="section" id="projets">
+    <div class="heading centered ">
+        <div class="head-3">
+            <h4 class="main-color font-40 uppercase ">Projets En cours<b class="main-bg hexa"></b></h4>
+        </div>
+    </div>
+    <div class="container">
+
+        {{ range where .Data.Pages "Params.type" "project" }}
+            {{ if not (.Params.termine) }}
+        <div class="row" style="padding-top: 40px;padding-bottom: 40px;">
+
+            <div class="col-md-7 col-sm-6 col-xs-12 order-1">
+                <div class="horizontal-slider posts-gal" data-slides_count="1" data-scroll_amount="1" data-slider-speed="1000" data-slider-infinite="1" data-slider-dots="1" data-slider-auto="1" >
+                    <div>
+                        <img src="{{ .Params.image_principale }}" alt="">
+                    </div>
+                    <div>
+                        <img src="{{ .Params.image_principale }}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-12">
+                <div class="content-block animate fadeInRight animated margin-top-25" data-animate="fadeInRight" style="margin-left: 50px">
+                    <div class="heading sub-head">
+                        <h3 class="head-4" style="margin-bottom: 25px">
+                            <span class="main-color" style="font-size: 35px">{{ .Params.title }}</span></h3>
+                    </div>
+                    <p class="lead">{{ .Params.texte_intro }}</p>
+                    <a href="{{ .Permalink }}" class="btn btn-md btn-icon-right main-bg btn-turquoise desc-box" target="_blank" ><i class="fa fa-arrow-right"></i><span>Plus d'informations</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{ end}}
+        {{ end}}
+        <!-- <div class="row" style="padding-top: 40px;padding-bottom: 40px;">
+
+            <div class="col-md-5 col-sm-6 col-xs-12">
+                <div class="content-block animate fadeInRight animated margin-top-25" data-animate="fadeInRight" style="margin-right: 20px">
+                    <div class="heading sub-head">
+                        <h3 class="head-4" style="margin-bottom: 25px">
+                            <span class="main-color" style="font-size: 35px">Résidence El Menzah</span></h3>
+                    </div>
+                    <p class="lead">La résidence <b> EL MENZAH </b> est située à Canastel (Hai El Manzah) et composée de 420 logements haut standing et des commerces en R+15, parking sur 02 sous-sols d’une capacité de 600 places. Elle est entièrement sécurisée et fermée avec toutes les commodités.</p>
+                    <a href="elmenzah.html" class="btn btn-md btn-icon-right main-bg btn-turquoise desc-box" target="_blank" ><i class="fa fa-arrow-right"></i><span>Plus d'informations</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-6 col-xs-12">
+                <div class="horizontal-slider posts-gal" data-slides_count="1" data-scroll_amount="1" data-slider-speed="1000" data-slider-infinite="1" data-slider-dots="1" data-slider-auto="1" >
+
+                    <div>
+                        <img src="assets/images/nouveau.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/images/plan.jpg" alt="">
+                    </div>
+
+
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+</div>

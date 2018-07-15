@@ -1,0 +1,18 @@
+<section class="section-block products-block pt-70 pb-30">
+  <div class="container">
+    <div class="product-block text-center">
+      <h2 class="heading md-heading centered">Awesome Features</h2>
+      <p class="big">NET-SYS garde une longueur d’avance en innovant régulièrement avec de nouveaux services.</p>
+      <div class="all-products">
+        <div class="row">
+          {{ range where .Data.Pages "Params.type" "feature" }}
+          <div class="col-md-3 product-item">
+            <img src="{{ .Params.Image }}" alt="{{ .Title }}" class="product-icon"  style="background-color: {{ .Params.color }};">
+            <div class="product-title">{{ .Title }}</div>
+          </div>
+          {{ end }}
+       </div>
+     </div>
+   </div>
+ </div>
+</section>

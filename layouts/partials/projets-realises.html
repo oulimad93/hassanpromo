@@ -1,0 +1,35 @@
+<div class="section gry-bg" id="references">
+                        <div class="heading centered ">
+                            <div class="head-3">
+                                <h4 class="main-color font-40 uppercase ">Projets réalisés<b class="main-bg hexa"></b></h4>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                {{ range where .Data.Pages "Params.type" "project" }}
+                                {{ if .Params.termine }}
+                                <div class="col-md-4">
+                                    <a href="{{ .Permalink }}">
+                                        <div class="team-box box-1">
+                                            <div class="">
+                                                {{ $bundle := .Site.GetPage "section" "media" }}
+
+                                                {{ $fileName := strings.TrimPrefix "/media/" .Params.image_principale }}
+                                                {{ $img := index ($bundle.Resources.Match $fileName) 0 }}
+                                                {{ $resizedImg := $img.Fill "400x400 center q100" }}
+                                                <img alt="" src="{{ $resizedImg.RelPermalink }}">
+
+                                            </div>
+                                            <div class="team-details">
+                                                <h3 class="team text-left">{{ .Params.title }}</h3>
+                                                <p class="lead realise">{{ .Params.texte_intro }}</p>
+                                                <a href="{{ .Permalink }}"><h5 class="team-pos text-left" > <i class="fa fa-info"></i> plus d'informations</h5></a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                {{ end }}
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>

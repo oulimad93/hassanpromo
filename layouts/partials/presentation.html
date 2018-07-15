@@ -1,0 +1,28 @@
+<div class="section gry-bg" id="apropos">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="content-block animate fadeInRight animated presentation-block" data-animate="fadeInRight" >
+                    <div class="heading sub-head">
+                        <h3 class="head-4 font-40 bolder uppercase" style="margin-bottom: 25px">Hassan <span class="main-color">Promo</span></h3>
+                    </div>
+                    {{ .Content }}
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="videoWrapper videoWrapper169 js-videoWrapper">
+                    <!-- YouTube iframe. -->
+                    <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
+                    <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
+                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/PQpoq3PfEDM?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+                    <!-- the poster frame - in the form of a button to make it keyboard accessible -->
+                    <button class="videoPoster js-videoPoster" style="background-image:url(/images/hassan.jpg);">Play video</button>
+                </div>
+                <button class="btn btn-md btn-video" onclick="videoStop()"><i class="fa fa-times"></i></button>
+
+            </div>
+        </div>
+    </div>
+</div>

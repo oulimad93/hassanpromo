@@ -1,0 +1,77 @@
+
+display_url: "https://hassanpromo.netlify.com"
+
+backend:
+  name: git-gateway
+
+media_folder: "content/media"
+public_folder: "media"
+
+collections:
+
+  - name: "pages"
+    label: "Pages"
+    editor:
+      preview: false
+    files:
+      - file: "content/_index.md"
+        label: "Page d'accueil"
+        name: "home"
+        fields:
+          - { label: "Presentation", name: "body", widget: "markdown" }
+          - { label: "Emplacement GPS", name: "localisation", widget: "string" }
+          - label: "Slides"
+            name: slides
+            widget: list
+            fields:
+              - { label: "Image", name: image, widget: image }
+
+          - label: Services
+            name: services
+            widget: list
+            fields:
+              - { label: Nom du service, name: name, widget: string }
+              - { label: Image, name: image, widget: image, required: true }
+
+
+
+      - file: "content/contact/_index.md"
+        label: "Contact"
+        name: "Contact"
+        editor:
+          preview: false
+        fields:
+          - { label: "Téléphone", name: "phone", widget: "string", required: true }
+          - { label: "Adresse", name: "address", widget: "string" }
+          - { label: "E-mail", name: "email", widget: "string" }
+
+  - name: "project"
+    label: "Service"
+    folder: "content/project"
+    fields:
+      - { label: "Type", name: "type", widget: "hidden", default: "project"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Petite Introduction", name: "texte_introduction", widget: "text" }
+      - { label: "Presentation Détaillée", name: "body", widget: "markdown" }
+      - { label: "Achevé", name: "termine", widget: "boolean" }
+      - { label: "Adresse", name: "address", widget: "string" }
+      - { label: "Emplacement GPS", name: "localisation", widget: "string" }
+      - { label: "Introduction appartements", name: "intro_appartements", widget: "text" }
+      - label: Caracteristiques
+        name: specs
+        widget: list
+        fields:
+          - { label: "Caracteristique", name: spec, widget: string }
+      - label: Plans
+        name: plans
+        widget: list
+        fields:
+          - { label: "Image", name: image, widget: image }
+          - { label: "Titre", name: title, widget: string }
+      - label: Avancements
+        name: avancement
+        widget: list
+        fields:
+          - { label: "Image", name: image, widget: image }
+

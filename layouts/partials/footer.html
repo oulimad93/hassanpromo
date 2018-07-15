@@ -7,8 +7,14 @@
                 </div>
                 <div class="centered">
                     <ul class="social-list minimal-socials">
-                    <li><a href="https://www.facebook.com/EURL-Hassan-PROMO-1807958839474639" class="fa fa-facebook shape sm round" data-hover="" target="_blank"></a></li>
-                    <li><a href="https://www.youtube.com/channel/UC0PiPxn2S4AhcQwhua9rmOw" class="fa fa-youtube shape sm round" data-hover="" target="_blank"></a></li>
+                      {{ with .Site.GetPage "section" "contact" }}
+                    <li>
+                      <a href="{{ .Params.facebook }}" class="fa fa-facebook shape sm round" data-hover="" target="_blank"></a>
+                    </li>
+                    <li>
+                      <a href="{{ .Params.youtube }}" class="fa fa-youtube shape sm round" data-hover="" target="_blank"></a>
+                    </li>
+                      {{ end }}
                 </ul>
                 </div>
                 <div class="clearfix margin-bottom-25"></div>

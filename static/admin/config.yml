@@ -18,13 +18,13 @@ collections:
         label: "Page d'accueil"
         name: "home"
         fields:
-          - { label: "Presentation", name: "body", widget: "markdown" }
-          - { label: "Emplacement GPS", name: "localisation", widget: "string" }
           - label: "Slides"
             name: "slides"
             widget: "list"
             fields:
-              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image (taille minimum: 1920x700 pour un bon résultat)", name: "image", widget: "image" }
+          - { label: "Présentation", name: "body", widget: "markdown" }
+          - { label: "Emplacement GPS du Siège Social", name: "localisation", widget: "string" }
 
       - file: "content/contact/_index.md"
         label: "Contact"
@@ -33,7 +33,7 @@ collections:
           preview: false
         fields:
           - { label: "Téléphone", name: "phone", widget: "string", required: true }
-          - { label: "Adresse", name: "address", widget: "string" }
+          - { label: "Adresse du Siége Social", name: "address", widget: "string" }
           - { label: "E-mail", name: "email", widget: "string" }
 
   - name: "project"
@@ -43,14 +43,14 @@ collections:
       preview: false
     fields:
       - { label: "Type", name: "type", widget: "hidden", default: "project"}
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Petite Introduction", name: "texte_intro", widget: "text" }
-      - { label: "Presentation Détaillée", name: "body", widget: "markdown" }
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Image Principale (taille minimum: 1000x500 pour un bon résultat)", name: "image", widget: "image" }
+      - { label: "Petite présentation pour la page d'accueil", name: "texte_intro", widget: "text" }
+      - { label: "Présentation Détaillée", name: "body", widget: "markdown" }
       - { label: "Achevé", name: "termine", widget: "boolean" }
-      - { label: "Adresse", name: "address", widget: "string" }
-      - { label: "Emplacement GPS", name: "localisation", widget: "string" }
-      - { label: "Introduction appartements", name: "intro_appartements", widget: "text" }
+      - { label: "Adresse du Projet", name: "address", widget: "string" }
+      - { label: "Emplacement GPS du Projet", name: "localisation", widget: "string" }
+      - { label: "Détails Appartements", name: "intro_appartements", widget: "text" }
       - label: "Caracteristiques"
         name: "specs"
         widget: "list"

@@ -15,12 +15,14 @@
                     <div class="social-wrap clearfix">
                         <a href="#contact" class="request">Contactez nous</a>
                         <ul class="social">
+                          {{ with .Site.GetPage "section" "contact" }}
                             <li>
-                                <a href="https://www.facebook.com/EURL-Hassan-PROMO-1807958839474639/" target="_blank"> <i class="fa fa-facebook"></i> </a>
+                                <a href="{{ .Params.facebook }}" target="_blank"> <i class="fa fa-facebook"></i> </a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/channel/UC0PiPxn2S4AhcQwhua9rmOw" target="_blank"> <i class="fa fa-youtube"></i> </a>
+                                <a href="{{ .Params.youtube }}" target="_blank"> <i class="fa fa-youtube"></i> </a>
                             </li>
+                            {{ end }}
                         </ul>
                     </div>
                 </div>

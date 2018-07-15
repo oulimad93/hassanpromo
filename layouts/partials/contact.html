@@ -1,5 +1,5 @@
 {{ with .Site.GetPage "section" "contact" }}
-<div id="contact" class="section parallax" style="background-image: url(&quot;/images/slide1.jpg&quot;); background-position: 0px -200px;" data-stellar-background-ratio="0.5">
+<div id="contact" class="section parallax" style="background-image: url(&quot;/images/slide1.jpg&quot;); background-position: 0px -200px;" data-stellar-background-ratio="00">
   <div class="container">
       <div class="row">
           <div class="col-md-4 col-sm-4">
@@ -17,7 +17,7 @@
                           <h4>Siège social</h4>
                       </div><!-- .custom-heading end -->
                       <p>
-                          <b>Adresse : </b> {{ .Params.address }}
+                          Adresse : <b style="color:#ffcc00">{{ .Params.address }}</b>
                       </p>
                   </div><!-- .feature-body end -->
               </div><!-- .feature-box-end -->

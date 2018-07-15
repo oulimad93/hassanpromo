@@ -575,7 +575,7 @@ feature-box.style-1 .custom-heading {
     overflow: hidden;
     color: #aaa;
     background: #222;
-    background-image: url('assets/images/footer-bg.jpg');
+    background-image: url('/images/footer-bg.jpg');
 }
 #to-top {
     position: fixed;

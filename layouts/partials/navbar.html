@@ -6,7 +6,9 @@
                 <div class="col-xs-12 col-sm-6">
                     <div class="mail">
                         <img src="/images/icon-mail.png" alt="">
-                        <span>Email : <a class="email-us">contact@hassanpromo.com</a></span>
+                        {{ with .Site.GetPage "section" "contact" }}
+                        <span>Email : <a class="email-us">{{ .Params.email }}</a></span>
+                        {{ end }}
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6">
@@ -37,9 +39,11 @@
                                 <img src="/images/iphone.png" alt="">
                                 <span class="transport">APPELEZ NOS POUR <br> PLUS D'INFORMATIONS</span>
                             </li>
+                            {{ with .Site.GetPage "section" "contact" }}
                             <li>
-                                <a href="tel:5917890123">+213 550 60 61 87</a>
+                                <a href="tel:{{ .Params.phone }}">{{ .Params.phone }}</a>
                             </li>
+                            {{ end }}
                         </ul>
                     </div>
                 </div>

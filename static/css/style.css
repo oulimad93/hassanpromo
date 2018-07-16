@@ -185,7 +185,7 @@ iframe {
 
 .page-loader span:nth-child(1) {
 	animation-delay: 0s;
-}	
+}
 .page-loader span:nth-child(2) {
 	animation-delay: 0.66s;
 }
@@ -3054,7 +3054,7 @@ textarea{
 	position:relative;
 	margin-bottom:30px;
 	padding-bottom:20px
-	
+
 }
 .heading [class*= "head-"] h3 {
 	font-size: 35px;
@@ -3969,7 +3969,7 @@ a.xl-icon:before,a.xl-icon:after{
 	z-index:1
 }
 .tabs nav li.active a {
-	padding:15px 20px 14px;	
+	padding:15px 20px 14px;
 }
 .tabs-style-default .nav-tabs>li.active>a,.tabs-style-default .nav-tabs>li.active>a:focus,.tabs-style-default .nav-tabs>li.active>a:hover{
 	border-top-width:3px !important
@@ -4562,7 +4562,7 @@ a.xl-icon:before,a.xl-icon:after{
 /*
 ------------- 6.8. CTA ---------------- */
 .cta_btn{
-	
+
 }
 .cta-left{
 	width:70%;
@@ -4695,7 +4695,7 @@ h4.cta_heading{
 
 /* box 3 */
 .team-box.box-3,.team-box.box-4{
-	position:relative;	
+	position:relative;
 }
 .team-box.box-3 .team-details,.team-box.box-4 .team-details{
 	position:absolute;
@@ -4950,7 +4950,7 @@ h4.cta_heading{
 	color:#fff
 }
 
-/* 
+/*
 ------------- 6.11. Testimonials -------------- */
 .testimonials-1 .testimonials-bg {
 	position:relative;
@@ -5903,7 +5903,7 @@ h4.cta_heading{
 	position:absolute;
 	left:15px;
 	top: 56px;
-} 
+}
 .login-inner .form-input .form-control{
 	padding: 15px 15px 15px 35px;
 }
@@ -6318,7 +6318,7 @@ h4.cta_heading{
 .img-holder:hover .img-over{
 	opacity:1;
 }
-.img-over .link,.img-over .zoom{
+.img-over .link,.img-over .zoom,.img-over .zoom2,.img-over .zoom3{
 	position:absolute;
 	bottom:40%;
 	opacity:0;
@@ -6331,7 +6331,7 @@ h4.cta_heading{
 	text-align:center;
 	margin-bottom:-20px
 }
-.img-over .link i,.img-over .zoom i{
+.img-over .link i,.img-over .zoom i,.img-over .zoom2 i,.img-over .zoom3 i{
 	display:block;
 	width:35px;
 	height:35px;
@@ -6339,7 +6339,7 @@ h4.cta_heading{
 	text-align:center
 }
 
-.img-holder:hover .link,.img-holder:hover .zoom{
+.img-holder:hover .link,.img-holder:hover .zoom,.img-holder:hover .zoom2,.img-holder:hover .zoom3{
 	opacity:1;
 	bottom:50%
 }
@@ -6365,9 +6365,13 @@ h4.cta_heading{
 	margin-left:-45px;
 	transition-delay: .2s;
 }
-.img-over .zoom{
+.img-over .zoom,.img-over .zoom3{
 	right:50%;
-	margin-right:-45px;
+	margin-right: -45px;
+	transition-delay: .3s;
+}
+.img-over .zoom2 {
+	right:60%;
 	transition-delay: .3s;
 }
 
@@ -6452,18 +6456,18 @@ h4.cta_heading{
 }
 
 /* simple */
-.simple .img-over .link, .simple .img-over .zoom{
+.simple .img-over .link, .simple .img-over .zoom, .simple .img-over .zoom2, .simple .img-over .zoom3{
 	width: 50px;
 	height: 50px;
 	margin-left:-55px;
 	border:1px #999 solid;
 }
-.simple .img-over .zoom{
+.simple .img-over .zoom,.simple .img-over .zoom2,.simple .img-over .zoom3{
 	margin-right:-55px;
 	margin-left:0
 }
-.simple .img-over .link i,.simple .img-over .zoom i{
-	
+.simple .img-over .link i,.simple .img-over .zoom i,.simple .img-over .zoom2 i,.simple .img-over .zoom3 i{
+
 	width: 50px;
 	height: 50px;
 	line-height: 50px;
@@ -7844,7 +7848,7 @@ ul.child-comment li{
 	-ms-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);	
+	-webkit-transform: rotate(-45deg);
 	line-height: 132px;
 	text-align:center
 }
@@ -9347,7 +9351,7 @@ span.lbl{
   10. TYPOGRAPHY.
 ============================================================================= */
 
-/* css transitions */ 
+/* css transitions */
 a,.btn,.btn i,.social-list li a, .top-head .logo, .top-nav > ul > li.hasChildren > a:after, .top-nav > ul > li.hasChildren > span > a:after,.top-head.header-5 .top-nav > ul > li:before,.top-head.header-6 .top-nav > ul > li > a:before,.top-head.header-8 .top-nav > ul > li > a:before,
 .clients img,.tags.hover-effect li,.tags.hover-effect li a,ul.flickr-widget .img-overlay,[class*= "btn-icon-"] span,[class*="btn-icon-"] i,.icon-box i,.icon-box h3,.box-1 .outlined i,.box-1.bordered:before, .box-1.bordered:after,.top-nav > ul > li,.icon-box-small i b:before,
 .box-1.bordered .inner:before, .box-1.bordered .inner:after,.icon-box h3.bottom_half_border:after,.tabs-style-bottomline .nav-tabs>li:after,.slick-prev,.slick-next,.team-details,.team-box .box-2 .box-socials,.icons-style-1 i,.icons-style-1 .heading,

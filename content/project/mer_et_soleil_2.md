@@ -1,9 +1,9 @@
 ---
 type: project
-title: Residence El Menzah
-image_principale: /media/nouveau.jpg
-texte_intro: 'La résidence EL MENZAH est située à Canastel (Hai El Manzah) et composée de 420 logements haut standing et des commerces en R+15, parking sur 02 sous-sols d’une capacité de 600 places. Elle est entièrement sécurisée et fermée avec toutes les commodités.'
-termine: false
+title: Résidence Mer & Soleil II
+image_principale: /media/ms2.jpg
+texte_intro: 'Située dans le quartier Frange Maritime à Canastel, elle se compose de 75 logements réparties sur 02 blocs de 15 étages.'
+termine: true
 address: Hai El Manzah - Canastel  -  Oran 3100, Algerie.
 localisation: 35.731803, -0.582943
 intro_appartements: 'Cette ensemble immobilier est composé de 05 tours en R+15 dont 05 blocs en R+10 avec des logements de types T3 et T4 bénéficiant d’une double exposition (deux façades) dotés de:'
@@ -30,5 +30,5 @@ avancement:
   - image: /media/4.jpg
   - image: /media/5.jpg
 ---
-La résidence « EL MENZAH » est située à Canastel (Hai El Manzah) et composée de 420 logements haut standing, des commerces en R+15, parking sur 02 sous-sols d’une capacité de 600 places.
+La résidence « Mer & Soleil II » est située à Canastel (Hai El Manzah) et composée de 420 logements haut standing, des commerces en R+15, parking sur 02 sous-sols d’une capacité de 600 places.
 La résidence est entièrement sécurisée et fermée avec toutes les commodités tel que : aires de jeux, espaces de détente, multiples commerces, grande salle de prière et salle de sport.

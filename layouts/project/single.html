@@ -1,8 +1,12 @@
 {{ define "main" }}
+{{ $bundle := .Site.GetPage "section" "media" }}
             <div id="contentWrapper">
 
                 <div class="row-eq-height dark" style="background: #253d4a;">
-                    <div class="col-lg-6" style="background-image:url('/images/el-menzah.jpg');background-position:center center;background-size:cover">
+                    {{ $fileName := strings.TrimPrefix "/media/" .Params.image_principale }}
+                    {{ $img := index ($bundle.Resources.Match $fileName) 0 }}
+                    {{ $resizedImg := $img.Fill "960x600 center q100" }}
+                    <div class="col-lg-6" style="background-image:url('{{ $resizedImg.RelPermalink }}');background-position:center center;background-size:cover">
 
                     </div>
                     <div class="col-lg-6 padding-vertical-80 padding-horizontal-20">
@@ -33,7 +37,7 @@
 
                         <div class="">
 
-                            <div class="row clearfix">
+                            <div class="row">
                                 <ul class="styled-list-one">
                                     {{ range .Params.specs }}
                                     <div class="col-md-4">
@@ -50,7 +54,7 @@
                 </div>
             </div>
 
-        {{ $bundle := .Site.GetPage "section" "media" }}
+
 
             <div class="section" id="types">
                 <div class="container">

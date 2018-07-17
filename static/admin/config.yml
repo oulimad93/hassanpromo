@@ -64,7 +64,7 @@ collections:
         fields:
           - { label: "Image (Taille minimum recommendée: 1280x720)", name: "image", widget: "image" }
           - { label: "Titre", name: "title", widget: "string" }
-        - label: "Gallerie de photos"
+      - label: "Gallerie de photos"
         name: "galerie"
         widget: "list"
         fields:

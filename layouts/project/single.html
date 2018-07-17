@@ -25,37 +25,39 @@
                     </div>
 
                 </div>
-                <div id="appartements"></div>
-                <div class="container">
-                    <div class="padding-horizontal-100" style="padding-top: 60px;">
-                        <div class="heading centered ">
-                            <div class="head-3">
-                                <h4 class="main-color font-40 uppercase ">Appartements<b class="main-bg hexa"></b></h4>
+                {{ if or (isset .Params "intro_appartements" ) (isset .Params "specs" ) }}
+                <div id="appartements">
+                    <div class="container">
+                        <div class="padding-horizontal-100" style="padding-top: 60px;">
+                            <div class="heading centered ">
+                                <div class="head-3">
+                                    <h4 class="main-color font-40 uppercase ">Appartements<b class="main-bg hexa"></b></h4>
+                                </div>
                             </div>
-                        </div>
-                        <p  style="color:#253d4a;" class="heading-desc" style="font-size: 16px;">{{ .Params.intro_appartements }}</p>
+                            <p  style="color:#253d4a;" class="heading-desc" style="font-size: 16px;">{{ .Params.intro_appartements }}</p>
 
-                        <div class="">
+                            <div class="">
 
-                            <div class="row">
-                                <ul class="styled-list-one">
-                                    {{ range .Params.specs }}
-                                    <div class="col-md-4">
-                                        <li class=""><i class="fa fa-long-arrow-right"></i> <span  style="color:#253d4a;">{{ .spec }}</span></li>
-                                    </div>
-                                    {{ end }}
+                                <div class="row">
+                                    <ul class="styled-list-one">
+                                        {{ range .Params.specs }}
+                                        <div class="col-md-4">
+                                            <li class=""><i class="fa fa-long-arrow-right"></i> <span  style="color:#253d4a;">{{ .spec }}</span></li>
+                                        </div>
+                                        {{ end }}
 
-                                 </ul>
+                                     </ul>
 
+                                </div>
+                                <p class="heading-desc margin-top-25 margin-bottom-0"  style="color:#253d4a;">Pour plus d''informations, Appelez nous au : +213 550 60 61 87 ou envoyez nous un message sur: contact@hassanpromo.com.</p>
                             </div>
-                            <p class="heading-desc margin-top-25 margin-bottom-0"  style="color:#253d4a;">Pour plus d''informations, Appelez nous au : +213 550 60 61 87 ou envoyez nous un message sur: contact@hassanpromo.com.</p>
                         </div>
                     </div>
                 </div>
+                {{ end }}
             </div>
 
-
-
+            {{ if  (isset .Params "plans" ) }}
             <div class="section" id="types">
                 <div class="container">
                     <div class="container">
@@ -83,12 +85,46 @@
                     </div>
                 </div>
             </div>
+            {{ end }}
 
+            {{ if  (isset .Params "galerie" ) }}
             <div class="section gry-bg" style="postision:relative;z-index:-1;" id="galerie">
                 <div class="container">
                     <div class="heading centered ">
                         <div class="head-3">
-                            <h4 class="main-color font-40 uppercase ">En cours de réalisation<b class="main-bg hexa"></b></h4>
+                            <h4 class="main-color font-40 uppercase ">Galerie de photos<b class="main-bg hexa"></b></h4>
+                        </div>
+                    </div>
+                    <div class="clearfix margin-bottom-35"></div>
+
+                      {{ range .Params.galerie }}
+                        {{ $fileName := strings.TrimPrefix "/media/" .image }}
+                        {{ $img := index ($bundle.Resources.Match $fileName) 0 }}
+                        {{ $resizedImg := $img.Fill "400x250 center q100" }}
+
+                        <div class="col-md-4 simple">
+                            <div class="img-holder">
+                                <div class="img-over">
+                                    <a href="{{ $img.RelPermalink }}" class="zoom2" ><i class="fa fa-search-plus"></i></a>
+                                </div>
+                                <img alt="" style="padding:30px 0;" src="{{ $resizedImg.RelPermalink }}">
+
+                            </div>
+                        </div>
+
+                    {{ end }}
+                    <div class="clearfix"></div>
+
+                </div>
+            </div>
+            {{ end }}
+
+            {{ if  (isset .Params "avancement" ) }}
+            <div class="section gry-bg" style="postision:relative;z-index:-1;" id="galerie">
+                <div class="container">
+                    <div class="heading centered ">
+                        <div class="head-3">
+                            <h4 class="main-color font-40 uppercase ">Réalisation<b class="main-bg hexa"></b></h4>
                         </div>
                     </div>
                     <div class="clearfix margin-bottom-35"></div>
@@ -101,7 +137,7 @@
                         <div class="col-md-4 simple">
                             <div class="img-holder">
                                 <div class="img-over">
-                                    <a href="{{ $img.RelPermalink }}" class="zoom2" title="{{ .title }}"><i class="fa fa-search-plus"></i></a>
+                                    <a href="{{ $img.RelPermalink }}" class="zoom3"><i class="fa fa-search-plus"></i></a>
                                 </div>
                                 <img alt="" style="padding:30px 0;" src="{{ $resizedImg.RelPermalink }}">
 
@@ -113,6 +149,7 @@
 
                 </div>
             </div>
+            {{ end }}
             <div id="localisation" class="section parallax" style="background-image: url(&quot;assets/images/el-menzah.jpg&quot;); background-position: 0px center;" data-stellar-background-ratio="0">
         <div class="container">
             <div class="row">

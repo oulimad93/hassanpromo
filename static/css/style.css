@@ -6365,12 +6365,12 @@ h4.cta_heading{
 	margin-left:-45px;
 	transition-delay: .2s;
 }
-.img-over .zoom,.img-over .zoom3{
+.img-over .zoom{
 	right:50%;
 	margin-right: -45px;
 	transition-delay: .3s;
 }
-.img-over .zoom2 {
+.img-over .zoom2,.img-over .zoom3 {
 	right:60%;
 	transition-delay: .3s;
 }

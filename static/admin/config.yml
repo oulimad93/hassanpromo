@@ -44,15 +44,15 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Type", name: "type", widget: "hidden", default: "project"}
-      - { label: "Titre", name: "title", widget: "string" }
-      - { label: "Image Principale (Taille minimum recommendée: 1000x500)", name: "image", widget: "image" }
-      - { label: "Petite présentation pour la page d'accueil", name: "texte_intro", widget: "text" }
-      - { label: "Présentation Détaillée", name: "body", widget: "markdown" }
+      - { label: "Titre", name: "title", widget: "string", required: true }
+      - { label: "Image Principale (Taille minimum recommendée: 1000x500)", name: "image", widget: "image", required: true }
+      - { label: "Petite présentation pour la page d'accueil", name: "texte_intro", widget: "text", required: true }
+      - { label: "Présentation Détaillée", name: "body", widget: "markdown", required: true }
       - { label: "Achevé", name: "termine", widget: "boolean" }
-      - { label: "Adresse du Projet", name: "address", widget: "string" }
-      - { label: "Emplacement GPS du Projet", name: "localisation", widget: "string" }
+      - { label: "Adresse du Projet", name: "address", widget: "string", required: true }
+      - { label: "Emplacement GPS du Projet", name: "localisation", widget: "string", required: true }
       - { label: "Détails Appartements", name: "intro_appartements", widget: "text" }
+      - { label: "Type", name: "type", widget: "hidden", default: "project"}
       - label: "Caracteristiques"
         name: "specs"
         widget: "list"
@@ -64,6 +64,11 @@ collections:
         fields:
           - { label: "Image (Taille minimum recommendée: 1280x720)", name: "image", widget: "image" }
           - { label: "Titre", name: "title", widget: "string" }
+        - label: "Gallerie de photos"
+        name: "galerie"
+        widget: "list"
+        fields:
+          - { label: "Image (Taille minimum recommendée: 1280x720)", name: "image", widget: "image" }
       - label: "Avancements"
         name: "avancement"
         widget: "list"

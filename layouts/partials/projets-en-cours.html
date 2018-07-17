@@ -12,11 +12,12 @@
 
             <div class="col-md-7 col-sm-6 col-xs-12 order-1">
                 <div class="horizontal-slider posts-gal" data-slides_count="1" data-scroll_amount="1" data-slider-speed="1000" data-slider-infinite="1" data-slider-dots="1" data-slider-auto="1" >
+                    {{ $bundle := .Site.GetPage "section" "media" }}
+                    {{ $fileName := strings.TrimPrefix "/media/" .Params.image_principale }}
+                    {{ $img := index ($bundle.Resources.Match $fileName) 0 }}
+                    {{ $resizedImg := $img.Fill "1000x600 center q100" }}
                     <div>
-                        <img src="{{ .Params.image_principale }}" alt="">
-                    </div>
-                    <div>
-                        <img src="{{ .Params.image_principale }}" alt="">
+                        <img src="{{ $resizedImg.RelPermalink }}" alt="">
                     </div>
                 </div>
             </div>

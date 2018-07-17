@@ -11065,6 +11065,10 @@ html.border5px .full-heading:before{
 	}
 }
 @media (max-width: 480px) {
+	.section-appartements {
+		padding-right: 25px;
+		padding-left: 25px;
+	}
 	.new-nav > ul > li a, .new-nav > ul > li.mega-menu h4{
 		font-size:13px;
 		padding:10px 15px
@@ -11185,3 +11189,7 @@ html.border5px .full-heading:before{
 html.square .pricing-tbl.style-4 .plan-head:before{
 	border-radius:0 !important
 }
+.section-appartements {
+		padding-right: 100px;
+		padding-left: 100px;
+	}

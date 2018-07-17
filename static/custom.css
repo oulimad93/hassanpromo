@@ -636,7 +636,7 @@ a.desc-box:hover + span.desc {
  .copyrights.centered {
     text-align: center;
     padding: 0 10px;
- }
+}
  ul.footer-menu {
     display: none;
  }
@@ -655,5 +655,28 @@ p.realise {
 .presentation-block p {
     font-size: 19px;
     line-height: 1.5;
+}
+.bloc-text-en-cours {
+    margin-left: 50px;
+}
+@media (max-width: 480px) {
+    .bloc-text-en-cours {
+        margin-left: 10px;
+    }
+    .logo-navbar {
+        width: 80%;
+        margin-left: 7%
+    }
+    .main-header {
+        height:100px;
+    }
+    .top-head.sticky-nav .logo-navbar{
+        width:120%;
+        margin:-30px 0 0 -30px !important;
+    }
+    .logo-footer {
+        width:80%;
+        margin-left: 10%;
+    }
 }
 

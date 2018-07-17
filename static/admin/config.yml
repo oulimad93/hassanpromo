@@ -45,7 +45,7 @@ collections:
       preview: false
     fields:
       - { label: "Titre", name: "title", widget: "string", required: true }
-      - { label: "Image Principale (Taille minimum recommendée: 1000x500)", name: "image", widget: "image", required: true }
+      - { label: "Image Principale (Taille minimum recommendée: 1000x500)", name: "image_principale", widget: "image", required: true }
       - { label: "Petite présentation pour la page d'accueil", name: "texte_intro", widget: "text", required: true }
       - { label: "Présentation Détaillée", name: "body", widget: "markdown", required: true }
       - { label: "Achevé", name: "termine", widget: "boolean" }

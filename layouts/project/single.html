@@ -5,7 +5,7 @@
                 <div class="row-eq-height dark" style="background: #253d4a;">
                     {{ $fileName := strings.TrimPrefix "/media/" .Params.image_principale }}
                     {{ $img := index ($bundle.Resources.Match $fileName) 0 }}
-                    {{ $resizedImg := $img.Fill "960x600 center q100" }}
+                    {{ $resizedImg := $img.Fill "1000x600 center q100" }}
                     <div class="col-lg-6" style="background-image:url('{{ $resizedImg.RelPermalink }}');background-position:center center;background-size:cover">
 
                     </div>

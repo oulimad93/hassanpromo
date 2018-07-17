@@ -1,7 +1,7 @@
 ---
 type: project
 title: Residence El Menzah
-image_principale: /media/nouveau.jpg
+image_principale: /media/el-menzah.jpg
 texte_intro: 'La résidence EL MENZAH est située à Canastel (Hai El Manzah) et composée de 420 logements haut standing et des commerces en R+15, parking sur 02 sous-sols d’une capacité de 600 places. Elle est entièrement sécurisée et fermée avec toutes les commodités.'
 termine: false
 address: Hai El Manzah - Canastel  -  Oran 3100, Algerie.

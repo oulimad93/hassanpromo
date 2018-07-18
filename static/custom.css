@@ -659,6 +659,12 @@ p.realise {
 .bloc-text-en-cours {
     margin-left: 50px;
 }
+.logo-navbar {
+    max-width: 115%;
+}
+.logo-footer {
+    max-width: 380px;
+}
 @media (max-width: 480px) {
     .bloc-text-en-cours {
         margin-left: 10px;
@@ -666,6 +672,9 @@ p.realise {
     .logo-navbar {
         width: 80%;
         margin-left: 7%
+    }
+    .logo-navbar {
+        max-width: 100%;
     }
     .main-header {
         height:100px;
@@ -678,10 +687,4 @@ p.realise {
         width:80%;
         margin-left: 10%;
     }
-}
-.logo-footer {
-    max-width: 380px;
-}
-img.logo-navbar {
-    max-width: 115% !important;
 }

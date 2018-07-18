@@ -271,7 +271,7 @@ ul.styled-list-one span {
     list-style-type: none;
     background: #314555;
     position: relative;
-    margin-right: 27px;
+    margin-right: 0px;
     padding-left: 38px;
     width: 800px;
     float: right;
@@ -679,4 +679,9 @@ p.realise {
         margin-left: 10%;
     }
 }
-
+.logo-footer {
+    max-width: 380px;
+}
+img.logo-navbar {
+    max-width: 115% !important;
+}
